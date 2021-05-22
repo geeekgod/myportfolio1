@@ -42,7 +42,7 @@ header {
     width: 100%;
     /* position: absolute; */
     height: 120vh;
-    background: linear-gradient(-45deg, #52a2c4, #11afef, #23a6d5, #1da1f2, #1175ef );
+    background: linear-gradient(-45deg, #11afef, #23a6d5, #1da1f2, #1175ef );
 	background-size: 400% 400%;
 	animation: flow 20s ease infinite;
 }
