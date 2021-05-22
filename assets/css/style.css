@@ -11,7 +11,9 @@ html, body {
 .col-md-6{
     padding: 0;
 }
-
+.row{
+    margin: 0;
+}
 /* Animations */
 
 @keyframes flow {
@@ -45,7 +47,7 @@ header {
 	animation: flow 20s ease infinite;
 }
 
-.content {
+.home.content {
     width: 94%;
     margin: 4em auto;
     font-size: 20px;
@@ -69,6 +71,7 @@ nav {
     position: fixed;
     width: 100%;
     line-height: 60px;
+    z-index: 999;
 }
 
 nav ul {
@@ -84,7 +87,7 @@ nav ul {
 }
 
 nav.black ul {
-    background: #000;
+    background: rgba(0, 0, 0, 0.9);
 }
 
 nav ul li {
@@ -101,7 +104,7 @@ nav ul li a {
 .menu-icon {
     line-height: 60px;
     width: 100%;
-    background: #000;
+    background: rgba(0, 0, 0, 0.9);
     text-align: right;
     box-sizing: border-box;
     padding: 15px 24px;
@@ -109,7 +112,17 @@ nav ul li a {
     color: #fff;
     display: none;
 }
-
+.home.content .img-cont{
+    display: flex;
+}
+.home.content img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+.home.content .intro{
+    padding: 1rem;
+}
 @media(max-width: 786px) {
     .wrapper{
         height: 100%;
@@ -122,24 +135,23 @@ nav ul li a {
 
     nav ul {
           max-height: 0px;
-          background: #000;
+          background: rgba(0, 0, 0, 0.9);
           position: fixed;
-          z-index: 990;
     }
 
     nav.black ul {
-          background: #000;
+          background: rgba(0, 0, 0, 0.9);
     }
 
     .showing {
-          max-height: 34em;
+          max-height: 100%;
           padding: 1rem 1rem;
     }
 
     nav ul li {
           box-sizing: border-box;
           width: 100%;
-          padding: 24px;
+          padding: 0.2rem;
           text-align: center;
     }
 
