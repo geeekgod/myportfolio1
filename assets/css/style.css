@@ -21,6 +21,7 @@ html, body {
     padding: 0;
     width: 100%;
     font-family: 'Ubuntu', sans-serif;;
+    height: 300vh;
 }
 a{
     text-decoration: none !important;
@@ -49,7 +50,7 @@ header {
 .wrapper{
     width: 100%;
     /* position: absolute; */
-    height: 120vh;
+    height: 110vh;
     background: linear-gradient(-45deg, #11afef, #23a6d5, #1da1f2, #1175ef );
 	background-size: 400% 400%;
 	animation: flow 20s ease infinite;
@@ -128,7 +129,7 @@ nav ul li a {
 .home.content img {
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 80%;
 }
 .home.content .intro{
     padding: 1rem;
@@ -152,7 +153,7 @@ nav ul li a {
     box-shadow: rgb(0 0 1 / 40%) 2px 5px 18px 0;
     margin-left: 0.4rem;
     margin-right: 0.4rem;
-    transition: 0.4s all ease-in-out;
+    transition: 0.5s all ease-in-out;
 }
 .home.content .fa-facebook:hover{
     background: #3b5999;
@@ -187,6 +188,51 @@ nav ul li a {
     }
     
 }
+.scroll-up-btn{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    font-size: 35px;
+    opacity: 0;
+}
+.scroll-up-btn.show{
+    opacity: 1;
+}
+.scroll-up-btn i{
+    color: #fff;
+    background: #6487d1;
+    border-radius: 50%;
+    border: solid 3px #6487d1;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    transition: all ease-in-out 0.5s;
+}
+.scroll-up-btn .fa-angle-up::before{
+    margin: auto;
+    font-size:34px;
+}
+.scroll-up-btn i:hover{
+    background: none;
+    color: #6487d1;
+}
+.home.content .btn-cont{
+    margin-top: 3rem;
+}
+.home.content .btn-cont .btn{
+    font-size: 20px;
+    padding: 10px 20px;
+    background: none;
+    border: 3px solid #fff;
+    border-radius: 1rem;
+    transition: all ease-in-out 0.5s;
+    font-weight: 600;
+}
+.home.content .btn-cont .btn:hover{
+    background: #fff;
+    color: #11afef;
+    transform: scale(1.05);
+}
 @media(max-width: 786px) {
     .wrapper{
         height: 100%;
@@ -201,6 +247,7 @@ nav ul li a {
           max-height: 0px;
           background: rgba(0, 0, 0, 0.9);
           position: fixed;
+          width: 100%;
     }
 
     nav.black ul {

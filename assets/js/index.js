@@ -2,9 +2,12 @@ $(document).ready(function() {
     $(".menu-icon").on("click", function() {
           $("nav ul").toggleClass("showing");
     });
-});
 
-// Scrolling Effect
+    // Scrolling Effect
+$('a').click(function(){
+      // applying again smooth scroll on menu items click
+      $('html').css("scrollBehavior", "smooth");
+  });
 
 $(window).on("scroll", function() {
     if($(window).scrollTop()) {
@@ -14,4 +17,14 @@ $(window).on("scroll", function() {
     else {
           $('nav').removeClass('black');
     }
+
+     // scroll-up button show/hide script
+     if(this.scrollY > 300){
+            $('.scroll-up-btn').addClass("show");
+      }
+      else{
+            $('.scroll-up-btn').removeClass("show");
+      }
 })
+
+});

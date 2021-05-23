@@ -24,7 +24,13 @@
 
 <body>
 
-    <div class="wrapper max-width">
+    <div class="scroll-up-btn">
+        <a href="#home">
+            <i class="fas fa-angle-up" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <div class="wrapper max-width" id="home">
         <header>
             <nav class="nav">
                 <div class="menu-icon">
@@ -56,23 +62,30 @@
                     <p>I'm a passionate content creator, and front end developer. 🤗</p>
                     <p>I help businesses build websites that their audience can't stop staring at. 😉</p>
                     <div class="social-home">
-                        <a href="https://www.facebook.com/profile.php?id=100015069613732" target="_blank">
+                        <a href="https://www.facebook.com/profile.php?id=100015069613732" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Facebook" >
                             <i class="fab fa-facebook"></i>
                         </a>
-                        <a href="https://www.instagram.com/thefrontendrish/" target="_blank">
+                        <a href="https://www.instagram.com/thefrontendrish/" target="_blank"   data-bs-toggle="tooltip" data-bs-placement="bottom" title="Instagram" >
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://github.com/thisisrishabh22" target="_blank">
+                        <a href="https://github.com/thisisrishabh22" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Github" >
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/rishabh-singh-4a0b30201/" target="_blank">
+                        <a href="https://www.linkedin.com/in/rishabh-singh-4a0b30201/" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="LinkedIn" >
                             <i class="fab fa-linkedin-in"></i>
                         </a>
+                    </div>
+                    <div class="btn-cont">
+                        <a href="" class="btn btn-primary">Let me get you a tour</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <section id="home" class="about">
+
+    </section>
 
 
     <!-- Vendor Scripts -->
@@ -84,6 +97,7 @@
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 
     <script src="assets/js/index.js"></script>
 </body>
