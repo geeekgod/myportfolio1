@@ -20,8 +20,7 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    font-family: 'Ubuntu', sans-serif;;
-    height: 300vh;
+    font-family: 'Ubuntu', sans-serif;
 }
 a{
     text-decoration: none !important;
@@ -236,7 +235,6 @@ nav ul li a {
     background: #fff;
     color: #11afef;
     top: 100%;
-    transform: scale(1.05);
 }
 @media(max-width: 786px) {
     .wrapper{
@@ -280,7 +278,7 @@ nav ul li a {
 
 /* About Section styling */
 .about{
-    margin-top: 15rem;
+    padding-top: 10rem;
 }
 .about .txt h1{
     font-size: 4.4rem;
@@ -293,6 +291,8 @@ nav ul li a {
 }
 .about .cont{
     margin: 2.3rem;
+    display: flex;
+    height: 100%;
 }
 .about .img{
     display: flex;
@@ -304,7 +304,6 @@ nav ul li a {
 }
 .about .txt-cont{
     display: flex;
-    margin-top: auto;
     height: 100%;
 }
 .about .text{
