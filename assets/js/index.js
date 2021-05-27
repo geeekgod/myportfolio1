@@ -9,6 +9,14 @@ $('a').click(function(){
       $('html').css("scrollBehavior", "smooth");
   });
 
+  var typed = new Typed(".typing-2", {
+      strings: ["Student","Frontend Developer", "Freelancer", "Content Creator"],
+      typeSpeed: 100,
+      backSpeed: 60,
+      loop: true
+  });
+
+
 $(window).on("scroll", function() {
     if($(window).scrollTop()) {
           $('nav').addClass('black');

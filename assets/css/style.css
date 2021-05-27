@@ -194,6 +194,7 @@ nav ul li a {
     bottom: 3rem;
     font-size: 35px;
     opacity: 0;
+    z-index: 9999;
 }
 .scroll-up-btn.show{
     opacity: 1;
@@ -220,17 +221,21 @@ nav ul li a {
     margin-top: 3rem;
 }
 .home.content .btn-cont .btn{
-    font-size: 20px;
-    padding: 10px 20px;
+    font-size: 18px;
+    padding: 10px 15px;
     background: none;
-    border: 3px solid #fff;
+    border: 2px solid #fff;
     border-radius: 1rem;
     transition: all ease-in-out 0.5s;
     font-weight: 600;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
 .home.content .btn-cont .btn:hover{
     background: #fff;
     color: #11afef;
+    top: 100%;
     transform: scale(1.05);
 }
 @media(max-width: 786px) {
@@ -270,4 +275,40 @@ nav ul li a {
           display: block;
     }
 
+}
+
+
+/* About Section styling */
+.about{
+    margin-top: 15rem;
+}
+.about .txt h1{
+    font-size: 4.4rem;
+    font-weight: 600;
+}
+.about .txt p{
+    margin-top: 2rem;
+    font-size: 18px;
+    font-weight: 400;
+}
+.about .cont{
+    margin: 2.3rem;
+}
+.about .img{
+    display: flex;
+}
+.about .img img{
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about .txt-cont{
+    display: flex;
+    margin-top: auto;
+    height: 100%;
+}
+.about .text{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 7rem; 
 }
