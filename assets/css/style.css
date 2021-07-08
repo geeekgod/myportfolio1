@@ -643,9 +643,6 @@ nav ul li a:hover {
 .contact .left .info .head {
   font-weight: 600;
 }
-.contact .form{
-
-}
 .contact .fields{
   display: flex;
 }
@@ -679,12 +676,27 @@ nav ul li a:hover {
   margin: auto;
   background: #00bbf9;
   color: #fff;
-  padding: 8px 34px;
-  font-size: 15px;
+  padding: 7px 34px;
+  font-size: 18px;
   max-height: 34px;
   font-weight: 600;
   transition: all ease-in-out 0.6s;
   border: solid #00bbf9 2px;
   border-radius: 7px;
   margin-left: 1rem;
+  outline: none;
+}
+.contact .button button:hover{
+  background: none;
+  color: #00bbf9;
+}
+@media (max-width:777px) {
+  .contact input, .contact textarea{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .contact .name input, .contact .email input{
+    margin-left: 0;
+    width: 98%;
+  }
 }
