@@ -2237,7 +2237,7 @@
             <div class="column right" data-aos="zoom-in" data-aos-duration="1500">
               <div class="text">
                   Message me</div>
-              <form class="form" action="https://formspree.io/f/mjvjonvk" method="POST">
+              <form class="form" id="form"  method="POST">
                   <div class="fields">
                       <div class="field name">
                           <input  type="text" placeholder="Please enter your Name" name="name" required="">
@@ -2288,5 +2288,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
 
     <script src="assets/js/index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
   </body>
+
+  <script type="text/javascript">
+  (function() {
+    // https://dashboard.emailjs.com/admin/integration
+    emailjs.init('user_9FmOlBV2SlSpEgvUXVA02');
+})();
+    window.onload = function() {
+        document.getElementById('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // generate a five digit number for the contact_number variable
+            // this.contact_number.value = Math.random() * 100000 | 0;
+            // these IDs from the previous steps
+            emailjs.sendForm('service_hz3lgg5', 'template_4v51afr', this)
+                .then(function() {
+                    console.log('SUCCESS!');
+                }, function(error) {
+                    console.log('FAILED...', error);
+                });
+        });
+    }
+</script>
 </html>
