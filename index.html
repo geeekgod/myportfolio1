@@ -2309,8 +2309,10 @@
             emailjs.sendForm('service_hz3lgg5', 'template_4v51afr', this)
                 .then(function() {
                     console.log('SUCCESS!');
+                    window.location.reload()
                 }, function(error) {
                     console.log('FAILED...', error);
+                    window.location.reload()
                 });
         });
     }
