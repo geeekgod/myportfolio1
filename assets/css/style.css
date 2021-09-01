@@ -21,10 +21,18 @@
 .tooltip.bottom {
   margin-top: 1.5rem;
 }
-img{
+img {
   user-select: none;
 }
-p , h1, h2,h3,h4,h5,h6,a , .logo{
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+.logo {
   user-select: none;
 }
 html,
@@ -448,9 +456,7 @@ nav ul li a:hover {
   border: rgba(0, 0, 0, 0) solid 1px;
   border-radius: 50%;
   box-shadow: 0 15px 39px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin: 2.4rem 2.1rem;
+  margin: 2.4rem 1.1rem;
   transition: 0.65s all ease-in-out;
   display: flex;
 }
@@ -496,6 +502,13 @@ nav ul li a:hover {
 }
 .skills .tooltip.bottom {
   margin-top: 1rem !important;
+}
+.skills i img{
+  max-width: 40px;
+  max-height: 40px;
+  width: 40px;
+  height: 40px;
+  margin: auto;
 }
 .tooltip-inner {
   padding: 4px 14px;
@@ -594,12 +607,12 @@ nav ul li a:hover {
     justify-content: space-evenly;
     margin: 1rem;
   }
-  .work .card{
-      margin: 2rem auto;
+  .work .card {
+    margin: 2rem auto;
   }
 }
 
-.contact{
+.contact {
   padding-top: 10rem;
   padding-bottom: 2rem;
 }
@@ -615,12 +628,12 @@ nav ul li a:hover {
   font-size: 20px;
   font-weight: 400;
 }
-.contact .column  .text {
+.contact .column .text {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
 }
-.contact .para{
+.contact .para {
   font-size: 16px;
 }
 
@@ -643,36 +656,40 @@ nav ul li a:hover {
 .contact .left .info .head {
   font-weight: 600;
 }
-.contact .fields{
+.contact .fields {
   display: flex;
 }
-.contact input, .contact textarea{
+.contact input,
+.contact textarea {
   padding: 0.8rem;
   width: max-content;
   outline: none;
   width: 100%;
-  margin:  1rem;
+  margin: 1rem;
   border: rgba(0, 0, 0, 0.4) 1px solid;
   border-radius: 8px;
 }
-.contact input:focus{
+.contact input:focus {
   border: #1da1f2 solid 1px;
 }
-.contact textarea:focus{
+.contact textarea:focus {
   border: #1da1f2 solid 1px;
 }
-.contact .name , .contact .email {
+.contact .name,
+.contact .email {
   width: 50%;
 }
-.contact .name input , .contact .email input {
+.contact .name input,
+.contact .email input {
   margin-left: 0.4rem;
   margin-right: 0.4rem;
   width: calc(100% - 1rem);
 }
-.contact .name input ,.contact .email input{
+.contact .name input,
+.contact .email input {
   margin-left: 1rem;
 }
-.contact .button button{
+.contact .button button {
   margin: auto;
   background: #00bbf9;
   color: #fff;
@@ -686,26 +703,28 @@ nav ul li a:hover {
   margin-left: 1rem;
   outline: none;
 }
-.contact .button button:hover{
+.contact .button button:hover {
   background: none;
   color: #00bbf9;
 }
-@media (max-width:777px) {
-  .contact input, .contact textarea{
+@media (max-width: 777px) {
+  .contact input,
+  .contact textarea {
     margin-left: 0;
     margin-right: 0;
   }
-  .contact .name input, .contact .email input{
+  .contact .name input,
+  .contact .email input {
     margin-left: 0;
     width: 98%;
   }
 }
-.footer{
+.footer {
   margin: 1rem 0 0 0;
   padding: 1rem 1rem 0rem 1rem;
   text-align: center;
   font-size: 16px;
 }
-.footer p{
+.footer p {
   margin-bottom: -1rem;
 }
