@@ -467,21 +467,6 @@ nav ul li a:hover {
   transform: translateY(-2.4rem);
   box-shadow: none;
 }
-.skills .SkillsIcon .fa-js-square:hover {
-  transform: translateY(2.4rem);
-}
-
-.skills .SkillsIcon .fa-html5:hover {
-  transform: translateY(2.4rem);
-}
-.skills .SkillsIcon .fa-bootstrap:hover {
-  transform: translateY(2.4rem);
-}
-/* 
-.skills .SkillsIcon .fa-react,
-.fa-git-alt {
-  margin-top: 5rem !important;
-} */
 .skills .fa-html5::before {
   color: #e34c26;
 }
@@ -563,7 +548,6 @@ nav ul li a:hover {
 .work .card {
   width: 300px;
   padding: 20px;
-  /* border: rgba(0, 0, 0, 0.1) solid 1px; */
   border-radius: 6px;
   box-shadow: #ccc 1px 0px 40px 0;
   transition: all ease-in-out 0.6s;
